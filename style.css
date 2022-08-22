@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Arial-MT";
+  src: url("../assets/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 100%;
+  height: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: center/cover, rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-image: url("./assets/home.png");
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.ancients-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ancient-img {
+  height: 260px;
+  width: auto;
+}
+
+.active {
+  border: 5px solid #633637 !important;
+  border-radius: 10px;
+  color: #633637 !important;
+}
+
+.diff-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.shuffle {
+  margin: 0px 260px;
+}
+
+.diff {
+  border: 5px solid purple;
+  box-sizing: border-box;
+  color: purple;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cards-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#RS-logo {
+  height: 32px;
+}
