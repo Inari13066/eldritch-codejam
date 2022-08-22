@@ -27,7 +27,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 10px;
+  gap: 30px;
 }
 
 .ancients-container {
@@ -37,14 +37,15 @@ main {
 }
 
 .ancient-img {
-  height: 260px;
+  height: 320px;
   width: auto;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .active {
-  border: 5px solid #633637 !important;
-  border-radius: 10px;
-  color: #633637 !important;
+  border: 5px solid #a822a6 !important;
+  color: #a822a6 !important;
 }
 
 .diff-container {
@@ -54,22 +55,69 @@ main {
 }
 
 .shuffle {
-  margin: 0px 260px;
+  margin-top: 30px;
 }
 
 .diff {
-  border: 5px solid purple;
+  width: auto;
+  border: 5px solid #be9fc4;
   box-sizing: border-box;
-  color: purple;
+  color: #be9fc4;
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.cards-field {
+.deck-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.deck,
+.card {
+  height: 400px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.deck {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.stage-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.dot {
+  padding-top: 5px;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+}
+
+.green {
+  background-color: #91cb3e;
+}
+
+.brown {
+  background-color: #934b00;
+}
+
+.blue {
+  background-color: #1d548f;
 }
 
 .links {

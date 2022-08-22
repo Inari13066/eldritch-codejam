@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link href="./assets/img/favicon.svg" rel="shortcut icon" />
     <link rel="stylesheet" href="./style.css" />
     <title>Eldritch codejam</title>
   </head>
@@ -39,15 +39,54 @@
           />
         </div>
         <div class="diff-container">
+          <div class="diff" id="very-easy">Очень низкая</div>
           <div class="diff" id="easy">Низкая</div>
           <div class="diff active" id="normal">Средняя</div>
           <div class="diff" id="hard">Высокая</div>
+          <div class="diff" id="very-hard">Очень Высокая</div>
+          <div class="diff shuffle">Замешать колоду</div>
         </div>
       </section>
-      <section>
-        <div class="diff shuffle">Замешать колоду</div>
+      <section class="deck-container">
+        <div class="current-state">
+          <div class="stage">
+            <div class="stage-text">Первая стадия</div>
+            <div class="dots">
+              <div class="dot green">1</div>
+              <div class="dot brown">2</div>
+              <div class="dot blue">1</div>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="stage-text">Вторая стадия</div>
+            <div class="dots">
+              <div class="dot green">2</div>
+              <div class="dot brown">3</div>
+              <div class="dot blue">1</div>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="stage-text">Третья стадия</div>
+            <div class="dots">
+              <div class="dot green">2</div>
+              <div class="dot brown">4</div>
+              <div class="dot blue">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="deck-block">
+          <img
+            class="deck"
+            src="./assets/mythicCardBackground.png"
+            alt="card back"
+          />
+          <img
+            class="card"
+            src="./assets/MythicCards/brown/brown12.png"
+            alt="card"
+          />
+        </div>
       </section>
-      <section class="cards-field"></section>
     </main>
     <footer class="footer">
       <div class="links">
