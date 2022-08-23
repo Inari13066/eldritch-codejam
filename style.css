@@ -26,6 +26,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  height: auto;
   padding: 10px;
   gap: 30px;
 }
@@ -132,4 +133,11 @@ main {
 
 #RS-logo {
   height: 32px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
 }
