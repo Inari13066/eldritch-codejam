@@ -73,8 +73,6 @@ function newDeck(boss, lvl) {
     }
   }
 
-  let card = document.querySelector(".card");
-  card.src = `${brownCards[0].cardFace}`;
   let greenCardsdiff = [];
   let brownCardsdiff = [];
   let blueCardsdiff = [];
@@ -213,7 +211,6 @@ function newCard(curr) {
     cardCurrent.style.visibility = "hidden";
     deckBack.style.visibility = "hidden";
   } else {
-    console.log(curr >= deckFinal.length, curr, deckFinal.length);
     cardCurrent.src = `${deckFinal[curr].cardFace}`;
     let currColor = deckFinal[curr].color;
     if (stage == 1) {
