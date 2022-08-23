@@ -7,6 +7,8 @@ let boss = "";
 
 let lvl = "";
 
+let currentCard = 0;
+
 for (let ancientImg of ancientImgs) {
   ancientImg.onclick = (e) => {
     if (boss != "") {
@@ -36,5 +38,11 @@ for (let diffLvl of diffLvls) {
 
 shuffle.onclick = () => {
   document.querySelector(".deck-container").style.visibility = "visible";
+  deckBack.style.visibility = "visible";
+  currentCard = 0;
   window.newDeck(boss, lvl);
+};
+
+deckBack.onclick = () => {
+  currentCard = window.newCard(currentCard);
 };

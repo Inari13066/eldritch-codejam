@@ -91,6 +91,10 @@ main {
   cursor: pointer;
 }
 
+.card {
+  visibility: hidden;
+}
+
 .stage-text {
   margin-top: 20px;
   margin-bottom: 10px;
