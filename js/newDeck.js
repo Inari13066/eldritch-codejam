@@ -1,4 +1,9 @@
 import ancientsData from "../data/ancients.js";
+import {
+  brownCards,
+  blueCards,
+  greenCards,
+} from "../data/mythicCards/index.js";
 
 let bossID = 0;
 let sum_green = 0;
@@ -60,6 +65,11 @@ function newDeck(boss, lvl) {
       dot.innerHTML = `${thirdStage.blueCards}`;
     }
   }
+
+  let card = document.querySelector(".card");
+  card.src = `${brownCards[0].cardFace}`;
+
+  for (let i = 0)
 }
 
 window.newDeck = newDeck;
